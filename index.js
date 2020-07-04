@@ -10,7 +10,7 @@ const app = express()
 app.use(express.json())
 
 app.get("/",(req,res) => {
-    res.send("helloworld")
+    res.json("helloworld")
 })
 
 // app.get("/users", paginationFun(User),(req,res) => {
