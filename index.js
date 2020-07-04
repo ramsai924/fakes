@@ -7,6 +7,8 @@ const app = express()
 //     console.log("db")
 // }).catch((err) => { console.log(err) })
 
+const port = process.env.PORT || 3000
+
 app.use(express.json())
 
 app.get("/",(req,res) => {
@@ -59,6 +61,6 @@ app.get("/",(req,res) => {
 //     }
 // }
 
-app.listen(5000,() => {
-    console.log("Listen to port 5000")
-})
+app.listen(port, () => {
+  console.log(`Listen to port ${port}`);
+});
